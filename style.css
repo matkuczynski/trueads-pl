@@ -147,6 +147,9 @@ section[id] { scroll-margin-top: 84px; }
   text-decoration: none;
 }
 .site-nav a:hover { color: var(--green-700); }
+/* CTA w nawigacji: .site-nav a ma wyższą specyficzność niż .btn i nadpisywał kolor tekstu */
+.site-nav a.btn { color: var(--bg); }
+.site-nav a.btn:hover { color: #FFFFFF; }
 
 .btn {
   display: inline-block;
